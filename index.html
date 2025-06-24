@@ -2,85 +2,76 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Thành Viên Minecraft</title>
+  <title>Giới thiệu Thành Viên Minecraft</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       background-color: #1e1e1e;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #2c3e50;
-      padding: 20px;
+      color: #f1f1f1;
+      font-family: 'Segoe UI', sans-serif;
       text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 30px;
-      gap: 20px;
-    }
-    .card {
-      background-color: #333;
       padding: 20px;
-      border-radius: 12px;
-      width: 220px;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(0,255,255,0.1);
-      transition: transform 0.3s;
     }
-    .card:hover {
-      transform: scale(1.05);
+
+    h1 {
+      color: #00ffcc;
+      margin-bottom: 40px;
     }
-    .avatar {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      margin-bottom: 15px;
-      object-fit: cover;
-      border: 3px solid #00ffff;
+
+    details {
+      background-color: #2c2c2c;
+      border: 2px solid #00ffcc;
+      border-radius: 15px;
+      margin: 15px auto;
+      padding: 15px;
+      width: 80%;
+      max-width: 500px;
+      box-shadow: 0 0 10px #00ffcc44;
+      transition: all 0.3s ease;
     }
-    .name {
-      font-size: 1.2em;
+
+    summary {
+      font-size: 1.4em;
+      cursor: pointer;
+      outline: none;
+    }
+
+    summary:hover {
       color: #00ffff;
-      font-weight: bold;
+    }
+
+    .description {
+      margin-top: 10px;
+      font-size: 1em;
+      color: #cccccc;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>🌍 Danh Sách Thành Viên Minecraft</h1>
-  </header>
+  <h1>🌟 Thành Viên Minecraft 🌟</h1>
 
-  <div class="container">
-    <div class="card">
-      <img class="avatar" src="https://minotar.net/avatar/KoylaMc" alt="KoylaMc">
-      <div class="name">KoylaMc</div>
-    </div>
-    <div class="card">
-      <img class="avatar" src="https://minotar.net/avatar/syho" alt="syho">
-      <div class="name">syho</div>
-    </div>
-    <div class="card">
-      <img class="avatar" src="https://minotar.net/avatar/PE_CauBeMaHong" alt="PE_CauBeMaHong">
-      <div class="name">PE_CauBeMaHong</div>
-    </div>
-    <div class="card">
-      <img class="avatar" src="https://minotar.net/avatar/HuynhTuanKiet" alt="HuynhTuanKiet">
-      <div class="name">HuynhTuanKiet</div>
-    </div>
-    <div class="card">
-      <img class="avatar" src="https://minotar.net/avatar/DieuThuw" alt="DieuThuw">
-      <div class="name">DieuThuw</div>
-    </div>
-  </div>
+  <details>
+    <summary>KoylaMc</summary>
+    <div class="description">Thành viên sáng lập, có kỹ năng PvP cực mạnh và rất năng động.</div>
+  </details>
+
+  <details>
+    <summary>syho</summary>
+    <div class="description">Người chuyên xây dựng và thiết kế căn cứ sáng tạo, đầy ý tưởng.</div>
+  </details>
+
+  <details>
+    <summary>PE_CauBeMaHong</summary>
+    <div class="description">Rất hài hước và thường xuyên mang lại tiếng cười cho team.</div>
+  </details>
+
+  <details>
+    <summary>HuynhTuanKiet</summary>
+    <div class="description">Chuyên đi mine và săn boss, không bao giờ ngại thử thách.</div>
+  </details>
+
+  <details>
+    <summary>DieuThuw</summary>
+    <div class="description">Người hỗ trợ hậu cần, giúp cả nhóm luôn đầy đủ tài nguyên.</div>
+  </details>
 </body>
 </html>
